@@ -8,6 +8,7 @@ const Simpson = ({simpson}) => {
                 <div>name: {name}</div>
                 <div>surname: {surname}</div>
                 <img src={image} alt={name}/>
+                <br/><br/>
             </div>
     )
 }
