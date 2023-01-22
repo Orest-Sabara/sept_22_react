@@ -1,12 +1,26 @@
+import React, { useEffect, useState } from "react";
 import './App.css';
-import {ImgBlock} from "./components/ImgBlock/ImgBlock";
+import { Users } from "./components/Users";
+import { UserDetails } from "./components/UserDetails";
+import { getUsers } from "./api/getUsers";
 
 function App() {
-    const url = 'https://static.onecms.io/wp-content/uploads/sites/6/2019/11/rick-and-morty-season-4-2000.jpg'
+    const [users, setUsers] = useState([]);
+    const [userId, setUserId] = useState(null);
+
+    useEffect(() => {
+        getUsers().then(resp => setUsers(resp));
+    }, []);
 
     return (
         <div className="App">
-            <ImgBlock url={url}/>
+            <div className="info-block">
+                {!!users.length && <Users users={users} onSelectUser={setUserId}/>}
+            </div>
+            <div className="divider"/>
+            <div className="info-block">
+                {!!userId && <UserDetails onRemoveUserDetails={setUserId} userId={userId}/>}
+            </div>
         </div>
     );
 }
