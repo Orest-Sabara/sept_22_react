@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React from 'react'
 
 export const Users = ({users, onSelectUser}) => {
     return (
@@ -13,5 +14,5 @@ export const Users = ({users, onSelectUser}) => {
                 )
             })}
         </div>
-    );
-};
+    )
+}

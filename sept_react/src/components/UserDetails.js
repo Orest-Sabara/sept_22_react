@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { getUser } from "../api/getUsers";
 
-export const UserDetails = ({userId, onRemoveUserDetails}) => {
+
+export const UserDetails =({userId, onRemoveUserDetails}) => {
     const [user, setUser] = useState(null);
+
     useEffect(() => {
         if (userId) {
             getUser(userId).then(resp => setUser(resp))
@@ -17,5 +19,5 @@ export const UserDetails = ({userId, onRemoveUserDetails}) => {
             <div>username: {user.username}</div>
             <button onClick={() => onRemoveUserDetails(null)}>Clean up user details</button>
         </div>
-    );
-};
+    )
+}
