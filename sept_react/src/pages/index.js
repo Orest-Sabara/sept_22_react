@@ -1,0 +1,6 @@
+export * from './AboutPage/AboutPage'
+export * from './PostsPage/PostsPage'
+export * from './HomePage/HomePage'
+export * from './PostDetailsPage/PostDetailsPage'
+export * from './UsersPage/UsersPage'
+export * from './NotFoundPage/NotFoundPage'
