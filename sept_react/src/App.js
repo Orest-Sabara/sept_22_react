@@ -1,12 +1,17 @@
 import './App.css';
-import {ImgBlock} from "./components/ImgBlock/ImgBlock";
+import {Cars, Form} from "./components";
+import {useSelector} from "react-redux";
 
 function App() {
-  return (
-    <div className="App">
-        <ImgBlock />
-    </div>
-  );
+     const {loading} = useSelector(state=>state.cars)
+    return (
+        <div className="wrapper">
+            <Form/>
+            <hr/>
+            {loading&&<h1>Loading.....</h1>}
+            <Cars />
+        </div>
+    );
 }
 
 export default App;
