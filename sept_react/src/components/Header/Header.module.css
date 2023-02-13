@@ -1,0 +1,16 @@
+.Header {
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: seagreen;
+}
+
+a{
+    text-decoration: none;
+    color: snow;
+    margin: 7px;
+    font-size: x-large;
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+}
