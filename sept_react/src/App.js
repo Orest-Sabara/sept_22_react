@@ -4,7 +4,7 @@ import {Users, Posts} from "./components";
 function App() {
 
     return (
-        <div className="App">
+        <div >
             <Users />
             <Posts />
         </div>
