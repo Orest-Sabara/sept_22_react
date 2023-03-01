@@ -1,0 +1,36 @@
+body {
+    background-color: beige;
+}
+
+.wid {
+    width: 200px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.widt {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.widMar {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}

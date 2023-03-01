@@ -1,10 +1,10 @@
 import './App.css';
-import {ImgBlock} from "./components/ImgBlock/ImgBlock";
+import ToDo from "./components/Todo/Todo"
 
 function App() {
   return (
     <div className="App">
-        <ImgBlock />
+        <ToDo/>
     </div>
   );
 }
