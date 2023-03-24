@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-Todo -> branch master -> components -> Todo
+
+Todo -> branch master(hw1_intro) -> src -> Todo
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
